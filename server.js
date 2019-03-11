@@ -28,9 +28,9 @@ const port = process.env.PORT || 9999
 if (process.env.NODE_ENV === 'production') {
   // instantiate the SSL certificate necessary for HTTPS
   const options = {
-      ca: fs.readFileSync('./credentials/rentburrow_com.ca-bundle'),
-      key: fs.readFileSync('./credentials/rentburrow_com.key'),
-      cert: fs.readFileSync('./credentials/rentburrow_com.crt'),
+      ca: fs.readFileSync('./credentials/development/example.ca-bundle'),
+      key: fs.readFileSync('./credentials/development/example.key'),
+      cert: fs.readFileSync('./credentials/development/example.crt'),
       requestCert: false,
       rejectUnauthorized: false
   }
@@ -42,9 +42,9 @@ if (process.env.NODE_ENV === 'production') {
 } else {
   // instantiate the SSL certificate necessary for HTTPS
   const options = {
-      ca: fs.readFileSync('./credentials/renthero_host.ca-bundle'),
-      key: fs.readFileSync('./credentials/renthero_host.key'),
-      cert: fs.readFileSync('./credentials/renthero_host.crt'),
+      ca: fs.readFileSync('./credentials/production/example.ca-bundle'),
+      key: fs.readFileSync('./credentials/production/example.key'),
+      cert: fs.readFileSync('./credentials/production/example.crt'),
       requestCert: false,
       rejectUnauthorized: false
   }
