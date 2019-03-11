@@ -7,10 +7,12 @@ Includes the following technologies:
 - Dockerized
 - AWS SDK
 
-## Setup
-$ npm install <br />
-$ npm run dev <br />
-$ npm run prod <br />
+## Quick Start
+```
+npm install <br />
+npm run dev <br />
+npm run prod <br />
+```
 
 ### Build and run docker images with:
 ```
@@ -19,9 +21,13 @@ bash run.sh <br />
 ```
 
 ### Check docker images and containers with:
-$ docker images <br />
-$ docker ps <br />
+```
+docker images <br />
+docker ps <br />
+```
 
 ### remove docker images and containers with:
-$ docker rm <CONTAINER_ID> <br />
-$ docker rmi <IMAGE_ID> <br />
+```
+docker rm <CONTAINER_ID> <br />
+docker rmi <IMAGE_ID> <br />
+```
